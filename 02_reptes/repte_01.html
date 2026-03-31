@@ -1,0 +1,1287 @@
+
+<!doctype html>
+<html lang="ca" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://cipfpbatoi.github.io/dwes2627/02_reptes/repte_01.html">
+      
+      
+        <link rel="prev" href="index.html">
+      
+      
+        <link rel="next" href="repte_02.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../imagenes/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Repte 01 - Programació web en Entorn Servidor 2026</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-X6D0LR7TC8"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-X6D0LR7TC8",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-X6D0LR7TC8",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="Teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#repte-1-kickoff-funcional-del-backend" class="md-skip">
+          Salta el contingut
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Capçalera">
+    <a href="../index.html" title="Programació web en Entorn Servidor 2026" class="md-header__button md-logo" aria-label="Programació web en Entorn Servidor 2026" data-md-component="logo">
+      
+  <img src="../imagenes/logofp.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Programació web en Entorn Servidor 2026
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Repte 01
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="Teal"  aria-label="Canviar a mode nit"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Canviar a mode nit" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="Teal"  aria-label="Canviar a mode dia"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Canviar a mode dia" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Neteja" aria-label="Neteja" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicialitzant cerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegació" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="Programació web en Entorn Servidor 2026" class="md-nav__button md-logo" aria-label="Programació web en Entorn Servidor 2026" data-md-component="logo">
+      
+  <img src="../imagenes/logofp.png" alt="logo">
+
+    </a>
+    Programació web en Entorn Servidor 2026
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inici
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_com_funciona_el_curs/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Com funciona el curs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reptes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reptes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visió general
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repte 01
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="repte_01.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repte 01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#finalitat-del-repte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finalitat del repte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-has-de-construir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Què has de construir
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-vol-aconseguir-amb-este-repte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Què es vol aconseguir amb este repte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructura-del-repte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estructura del repte
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Estructura del repte">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-decisio-tecnica-inicial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Decisió tècnica inicial
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-entorn-executable-i-estructura-base" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Entorn executable i estructura base
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-primer-flux-funcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Primer flux funcional
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-tancament-tecnic-del-repte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Tancament tècnic del repte
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evidencies-obligatories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evidències obligatòries
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-senten-per-primer-flux-funcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Què s’entén per “primer flux funcional”
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-comprovara" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Què es comprovarà
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint-del-repte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint del repte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defensa-tecnica-breu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Defensa tècnica breu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#us-de-la-ia-en-este-repte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ús de la IA en este repte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#riscos-habituals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Riscos habituals
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recomanacions-de-treball" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recomanacions de treball
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quan-es-considera-superat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quan es considera superat
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-prepara-este-repte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Què prepara este repte
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="repte_02.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repte 02
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="repte_03.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repte 03
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="repte_04.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repte 04
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="repte_05.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repte 05
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fase_final.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase final
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Com s'avalua
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Com s'avalua
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visió general
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/evidencies.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evidències
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/checkpoints_i_defenses.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Checkpoints i defenses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_materials/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Materials
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_projecte_base/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projecte base
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_recursos_rapid/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recursos ràpids
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="repte-1-kickoff-funcional-del-backend">Repte 1. Kickoff funcional del backend<a class="headerlink" href="#repte-1-kickoff-funcional-del-backend" title="Permanent link">&para;</a></h1>
+<h2 id="finalitat-del-repte">Finalitat del repte<a class="headerlink" href="#finalitat-del-repte" title="Permanent link">&para;</a></h2>
+<p>En este primer repte has de posar en marxa la base tècnica del projecte i demostrar que el sistema ja és capaç de fer alguna cosa real, encara que siga una primera funcionalitat mínima.</p>
+<p>L’objectiu no és només triar tecnologia o crear un esquelet buit. L’objectiu és deixar una base executable, documentada i amb un primer flux funcional verificable.</p>
+<h2 id="que-has-de-construir">Què has de construir<a class="headerlink" href="#que-has-de-construir" title="Permanent link">&para;</a></h2>
+<p>Has de preparar una primera versió funcional del projecte que incloga, com a mínim:</p>
+<ul>
+<li>un repositori ordenat i executable</li>
+<li>una decisió tècnica inicial justificada</li>
+<li>un punt d’entrada al producte</li>
+<li>un formulari o interacció equivalent útil</li>
+<li>una validació mínima en servidor</li>
+<li>un registre o persistència bàsica de la informació</li>
+<li>un README que permeta arrancar el projecte</li>
+<li>una traçabilitat mínima del treball</li>
+</ul>
+<h2 id="que-es-vol-aconseguir-amb-este-repte">Què es vol aconseguir amb este repte<a class="headerlink" href="#que-es-vol-aconseguir-amb-este-repte" title="Permanent link">&para;</a></h2>
+<p>Amb este repte has de demostrar que saps:</p>
+<ul>
+<li>posar en marxa un entorn de treball real</li>
+<li>prendre una primera decisió tècnica amb criteri</li>
+<li>connectar una entrada d’usuari amb el backend</li>
+<li>validar informació en servidor</li>
+<li>deixar rastre del treball fet</li>
+<li>explicar què has construït i per què</li>
+</ul>
+<h2 id="estructura-del-repte">Estructura del repte<a class="headerlink" href="#estructura-del-repte" title="Permanent link">&para;</a></h2>
+<p>Este repte es pot treballar en quatre parts.</p>
+<h3 id="1-decisio-tecnica-inicial">1. Decisió tècnica inicial<a class="headerlink" href="#1-decisio-tecnica-inicial" title="Permanent link">&para;</a></h3>
+<p>Has de comparar opcions i justificar quina base tècnica utilitzaràs per al projecte.</p>
+<p>No cal fer una comparativa enorme, però sí suficient per explicar:</p>
+<ul>
+<li>quina opció tries</li>
+<li>per què la tries</li>
+<li>quines alternatives has descartat</li>
+<li>per què és adequada per al projecte</li>
+</ul>
+<h3 id="2-entorn-executable-i-estructura-base">2. Entorn executable i estructura base<a class="headerlink" href="#2-entorn-executable-i-estructura-base" title="Permanent link">&para;</a></h3>
+<p>Has de deixar el projecte preparat perquè es puga arrancar de manera clara i reproduïble.</p>
+<p>Això inclou:</p>
+<ul>
+<li>estructura mínima del repositori</li>
+<li>fitxers necessaris per començar</li>
+<li>primeres decisions d’organització</li>
+<li>README amb instruccions d’arrancada</li>
+</ul>
+<h3 id="3-primer-flux-funcional">3. Primer flux funcional<a class="headerlink" href="#3-primer-flux-funcional" title="Permanent link">&para;</a></h3>
+<p>Has de construir una primera interacció real amb el sistema.</p>
+<p>Per exemple:</p>
+<ul>
+<li>una landing o equivalent</li>
+<li>un formulari útil</li>
+<li>tractament de la petició</li>
+<li>validació mínima</li>
+<li>resposta clara</li>
+<li>registre o persistència bàsica</li>
+</ul>
+<h3 id="4-tancament-tecnic-del-repte">4. Tancament tècnic del repte<a class="headerlink" href="#4-tancament-tecnic-del-repte" title="Permanent link">&para;</a></h3>
+<p>Has de deixar el treball preparat per a revisió.</p>
+<p>Això inclou:</p>
+<ul>
+<li>README revisat</li>
+<li>evidència de prova del flux</li>
+<li>decisions bàsiques documentades</li>
+<li>preparació per a checkpoint o defensa</li>
+</ul>
+<h2 id="evidencies-obligatories">Evidències obligatòries<a class="headerlink" href="#evidencies-obligatories" title="Permanent link">&para;</a></h2>
+<p>Per considerar complet el repte, hauràs d’aportar com a mínim:</p>
+<ul>
+<li>repositori actualitzat</li>
+<li>README executable</li>
+<li>issue principal del repte o registre equivalent de tasques</li>
+<li>commits amb sentit</li>
+<li>comparativa o decisió tècnica inicial</li>
+<li>primer flux funcional operatiu</li>
+<li>evidència de validació mínima</li>
+<li>evidència de registre o persistència bàsica</li>
+<li>demo o mostra funcional del repte</li>
+</ul>
+<h2 id="que-senten-per-primer-flux-funcional">Què s’entén per “primer flux funcional”<a class="headerlink" href="#que-senten-per-primer-flux-funcional" title="Permanent link">&para;</a></h2>
+<p>No n’hi ha prou amb una pàgina bonica o amb una estructura de projecte que “sembla” correcta.</p>
+<p>En este repte hi ha d’haver una seqüència real, encara que siga simple:</p>
+<ul>
+<li>l’usuari envia una informació</li>
+<li>el sistema la rep</li>
+<li>el sistema la valida mínimament</li>
+<li>el sistema respon</li>
+<li>i queda algun tipus de rastre o registre de la dada</li>
+</ul>
+<h2 id="que-es-comprovara">Què es comprovarà<a class="headerlink" href="#que-es-comprovara" title="Permanent link">&para;</a></h2>
+<p>Es comprovarà si:</p>
+<ul>
+<li>el projecte arranca de veritat</li>
+<li>el README permet posar-lo en marxa</li>
+<li>el flux funcional està connectat de punta a punta</li>
+<li>la validació no és només aparent</li>
+<li>hi ha una primera decisió tècnica justificable</li>
+<li>el treball està traçat amb evidències reals</li>
+<li>pots explicar el que has fet</li>
+</ul>
+<h2 id="checkpoint-del-repte">Checkpoint del repte<a class="headerlink" href="#checkpoint-del-repte" title="Permanent link">&para;</a></h2>
+<p>En el checkpoint hauràs de poder mostrar:</p>
+<ul>
+<li>que el projecte arranca</li>
+<li>quina tecnologia o enfocament has triat</li>
+<li>quin és el primer flux funcional</li>
+<li>què valida el sistema</li>
+<li>què queda registrat o persistit</li>
+<li>quins problemes has tingut fins ara</li>
+</ul>
+<h2 id="defensa-tecnica-breu">Defensa tècnica breu<a class="headerlink" href="#defensa-tecnica-breu" title="Permanent link">&para;</a></h2>
+<p>En la defensa o revisió hauràs de poder respondre preguntes com:</p>
+<ul>
+<li>per què has triat esta opció tècnica?</li>
+<li>què passaria si canviara el context del projecte?</li>
+<li>què fa exactament el backend quan rep la petició?</li>
+<li>on es valida la informació?</li>
+<li>què està realment implementat i què encara no?</li>
+</ul>
+<h2 id="us-de-la-ia-en-este-repte">Ús de la IA en este repte<a class="headerlink" href="#us-de-la-ia-en-este-repte" title="Permanent link">&para;</a></h2>
+<p>La IA et pot ajudar, per exemple, a:</p>
+<ul>
+<li>comparar opcions</li>
+<li>generar esquelets inicials</li>
+<li>detectar errors de configuració</li>
+<li>revisar el README</li>
+<li>suggerir validacions</li>
+</ul>
+<p>Però no és suficient copiar el que et done.</p>
+<p>Has de poder:</p>
+<ul>
+<li>explicar la solució</li>
+<li>adaptar-la</li>
+<li>verificar-la</li>
+<li>corregir errors</li>
+<li>justificar per què l’has adoptada</li>
+</ul>
+<h2 id="riscos-habituals">Riscos habituals<a class="headerlink" href="#riscos-habituals" title="Permanent link">&para;</a></h2>
+<p>Convindria evitar estos errors:</p>
+<ul>
+<li>muntar només un esquelet sense funcionalitat real</li>
+<li>portar una comparativa superficial</li>
+<li>fer un formulari sense tractament real en servidor</li>
+<li>validar només de manera aparent</li>
+<li>tindre un README que no servix per arrancar el projecte</li>
+<li>presentar codi que no pots explicar</li>
+</ul>
+<h2 id="recomanacions-de-treball">Recomanacions de treball<a class="headerlink" href="#recomanacions-de-treball" title="Permanent link">&para;</a></h2>
+<p>Per anar bé en este repte, convé:</p>
+<ul>
+<li>decidir prompte una base tècnica</li>
+<li>muntar el projecte al més prompte possible</li>
+<li>provar des del principi el flux funcional</li>
+<li>documentar problemes i decisions</li>
+<li>no deixar README i evidències per al final</li>
+<li>arribar al checkpoint amb una demo real preparada</li>
+</ul>
+<h2 id="quan-es-considera-superat">Quan es considera superat<a class="headerlink" href="#quan-es-considera-superat" title="Permanent link">&para;</a></h2>
+<p>Este repte es considera superat quan:</p>
+<ul>
+<li>el projecte es pot arrancar</li>
+<li>existix una primera funcionalitat real</li>
+<li>hi ha una entrada d’usuari tractada pel backend</li>
+<li>hi ha validació mínima en servidor</li>
+<li>existix algun registre o persistència bàsica</li>
+<li>el treball està documentat i traçat</li>
+<li>pots defendre tècnicament el que has fet</li>
+</ul>
+<h2 id="que-prepara-este-repte">Què prepara este repte<a class="headerlink" href="#que-prepara-este-repte" title="Permanent link">&para;</a></h2>
+<p>Este repte deixa la base preparada per al següent pas del curs:</p>
+<ul>
+<li>tractar millor les dades</li>
+<li>incorporar lògica de processament</li>
+<li>gestionar estat</li>
+<li>protegir funcionalitats</li>
+<li>i fer que el producte comence a comportar-se com un sistema real</li>
+</ul>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2026-2027 Ignasi Gomis  - Licencia CC BY-NC-SA
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:<i.gomismullor@edu.gva.es>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 12.13c-.15.01-.29.06-.39.17l-1 1 2.05 2 1-1c.22-.21.22-.56 0-.77l-1.24-1.23a.56.56 0 0 0-.38-.17m-2 1.75L13 19.94V22h2.06l6.06-6.07M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7v-.89l8.24-8.22c.47-.49 1.12-.76 1.8-.76.34 0 .68.06 1 .19V6c0-1.12-.92-2-2.04-2m0 4-8 5-8-5V6l8 5 8-5"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["header.autohide", "toc.integrate", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiat al porta-retalls", "clipboard.copy": "C\u00f2pia al porta-retalls", "search.result.more.one": "1 m\u00e9s en aquesta p\u00e0gina", "search.result.more.other": "# m\u00e9s en aquesta p\u00e0gina", "search.result.none": "Cap document coincideix", "search.result.one": "1 document coincident", "search.result.other": "# documents coincidents", "search.result.placeholder": "Escriu per a comen\u00e7ar a cercar", "search.result.term.missing": "Desaparegut", "select.version": "Selecciona la versi\u00f3"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

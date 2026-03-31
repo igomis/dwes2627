@@ -1,0 +1,1367 @@
+
+<!doctype html>
+<html lang="ca" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://cipfpbatoi.github.io/dwes2627/02_reptes/repte_02.html">
+      
+      
+        <link rel="prev" href="repte_01.html">
+      
+      
+        <link rel="next" href="repte_03.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../imagenes/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Repte 02 - Programació web en Entorn Servidor 2026</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-X6D0LR7TC8"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-X6D0LR7TC8",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-X6D0LR7TC8",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="Teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#repte-2-processament-estat-i-funcionalitat-protegida" class="md-skip">
+          Salta el contingut
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Capçalera">
+    <a href="../index.html" title="Programació web en Entorn Servidor 2026" class="md-header__button md-logo" aria-label="Programació web en Entorn Servidor 2026" data-md-component="logo">
+      
+  <img src="../imagenes/logofp.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Programació web en Entorn Servidor 2026
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Repte 02
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="Teal"  aria-label="Canviar a mode nit"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Canviar a mode nit" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="Teal"  aria-label="Canviar a mode dia"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Canviar a mode dia" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Neteja" aria-label="Neteja" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicialitzant cerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegació" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="Programació web en Entorn Servidor 2026" class="md-nav__button md-logo" aria-label="Programació web en Entorn Servidor 2026" data-md-component="logo">
+      
+  <img src="../imagenes/logofp.png" alt="logo">
+
+    </a>
+    Programació web en Entorn Servidor 2026
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inici
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_com_funciona_el_curs/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Com funciona el curs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reptes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reptes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visió general
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="repte_01.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repte 01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repte 02
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="repte_02.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repte 02
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Taula de continguts
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#finalitat-del-repte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finalitat del repte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-has-de-construir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Què has de construir
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-vol-aconseguir-amb-este-repte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Què es vol aconseguir amb este repte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#idea-clau-del-repte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Idea clau del repte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estructura-del-repte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estructura del repte
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Estructura del repte">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-formulari-base-i-recuperacio-de-dades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Formulari base i recuperació de dades
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-processament-basic-de-la-peticio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Processament bàsic de la petició
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-logica-del-flux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Lògica del flux
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-estat-sessio-o-mecanisme-equivalent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Estat, sessió o mecanisme equivalent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-autenticacio-i-funcionalitat-protegida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Autenticació i funcionalitat protegida
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-tancament-prova-i-revisio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Tancament, prova i revisió
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evidencies-obligatories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evidències obligatòries
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-senten-per-funcionalitat-protegida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Què s’entén per funcionalitat protegida
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-comprovara" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Què es comprovarà
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoint-del-repte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checkpoint del repte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#defensa-tecnica-breu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Defensa tècnica breu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#us-de-la-ia-en-este-repte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ús de la IA en este repte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#riscos-habituals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Riscos habituals
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recomanacions-de-treball" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recomanacions de treball
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quan-es-considera-superat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quan es considera superat
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-prepara-este-repte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Què prepara este repte
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="repte_03.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repte 03
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="repte_04.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repte 04
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="repte_05.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repte 05
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fase_final.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase final
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Com s'avalua
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Com s'avalua
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visió general
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/evidencies.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evidències
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_com_s_avalua/checkpoints_i_defenses.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Checkpoints i defenses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_materials/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Materials
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_projecte_base/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projecte base
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_recursos_rapid/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recursos ràpids
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="repte-2-processament-estat-i-funcionalitat-protegida">Repte 2. Processament, estat i funcionalitat protegida<a class="headerlink" href="#repte-2-processament-estat-i-funcionalitat-protegida" title="Permanent link">&para;</a></h1>
+<h2 id="finalitat-del-repte">Finalitat del repte<a class="headerlink" href="#finalitat-del-repte" title="Permanent link">&para;</a></h2>
+<p>En este repte el projecte deixa de ser només una base funcional i passa a comportar-se més com un sistema real.</p>
+<p>Ara no n’hi ha prou amb rebre una dada i respondre. El sistema ha de ser capaç de:</p>
+<ul>
+<li>tractar informació d’entrada amb més criteri</li>
+<li>aplicar lògica bàsica de programació</li>
+<li>mantindre estat quan faça falta</li>
+<li>gestionar autenticació</li>
+<li>protegir una primera funcionalitat real del domini</li>
+</ul>
+<h2 id="que-has-de-construir">Què has de construir<a class="headerlink" href="#que-has-de-construir" title="Permanent link">&para;</a></h2>
+<p>Has de fer evolucionar el projecte del Repte 1 fins a arribar a una primera funcionalitat protegida.</p>
+<p>El repte ha d’incloure, com a mínim:</p>
+<ul>
+<li>un formulari o entrada de dades real</li>
+<li>recuperació i tractament de la informació en servidor</li>
+<li>ús de decisions, estructures de dades o funcions quan tinga sentit</li>
+<li>una evidència de manteniment d’estat</li>
+<li>autenticació funcional o mecanisme equivalent</li>
+<li>una operació del projecte protegida</li>
+<li>tractament mínim d’errors</li>
+<li>proves o verificacions bàsiques del flux</li>
+</ul>
+<h2 id="que-es-vol-aconseguir-amb-este-repte">Què es vol aconseguir amb este repte<a class="headerlink" href="#que-es-vol-aconseguir-amb-este-repte" title="Permanent link">&para;</a></h2>
+<p>Amb este repte has de demostrar que saps:</p>
+<ul>
+<li>rebre i tractar dades de manera útil</li>
+<li>programar lògica de servidor amb sentit</li>
+<li>diferenciar entre estat, autenticació i accés protegit</li>
+<li>construir una funcionalitat del projecte que no estiga oberta a qualsevol situació</li>
+<li>comprovar què funciona i què falla</li>
+<li>explicar el flux complet del sistema</li>
+</ul>
+<h2 id="idea-clau-del-repte">Idea clau del repte<a class="headerlink" href="#idea-clau-del-repte" title="Permanent link">&para;</a></h2>
+<p>Este repte <strong>no és només fer login</strong>.</p>
+<p>El valor real està en arribar a una situació com esta:</p>
+<ul>
+<li>l’usuari introduïx dades</li>
+<li>el sistema les rep i les tracta</li>
+<li>el sistema aplica lògica</li>
+<li>el sistema manté alguna informació d’estat quan toca</li>
+<li>el sistema comprova qui és l’usuari o en quina situació està</li>
+<li>el sistema permet o impedix una acció real del producte</li>
+</ul>
+<h2 id="estructura-del-repte">Estructura del repte<a class="headerlink" href="#estructura-del-repte" title="Permanent link">&para;</a></h2>
+<p>Este repte es pot treballar en sis parts.</p>
+<h3 id="1-formulari-base-i-recuperacio-de-dades">1. Formulari base i recuperació de dades<a class="headerlink" href="#1-formulari-base-i-recuperacio-de-dades" title="Permanent link">&para;</a></h3>
+<p>Has de construir una entrada de dades funcional i demostrar que el backend rep correctament la informació.</p>
+<p>Això implica, com a mínim:</p>
+<ul>
+<li>camps útils</li>
+<li>recepció real de dades</li>
+<li>una resposta observable del sistema</li>
+</ul>
+<h3 id="2-processament-basic-de-la-peticio">2. Processament bàsic de la petició<a class="headerlink" href="#2-processament-basic-de-la-peticio" title="Permanent link">&para;</a></h3>
+<p>Has de tractar la informació en servidor de manera clara i funcional.</p>
+<p>Això vol dir que hi ha d’haver:</p>
+<ul>
+<li>variables amb sentit</li>
+<li>operacions bàsiques</li>
+<li>tractament del flux</li>
+<li>una resposta construïda a partir de les dades rebudes</li>
+</ul>
+<h3 id="3-logica-del-flux">3. Lògica del flux<a class="headerlink" href="#3-logica-del-flux" title="Permanent link">&para;</a></h3>
+<p>Has d’aplicar lògica bàsica de programació allà on faça falta.</p>
+<p>Per exemple:</p>
+<ul>
+<li>decisions</li>
+<li>estructures iteratives</li>
+<li>arrays o estructures equivalents</li>
+<li>funcions útils</li>
+</ul>
+<p>No es tracta d’afegir-les per decorar, sinó perquè la funcionalitat ho necessite.</p>
+<h3 id="4-estat-sessio-o-mecanisme-equivalent">4. Estat, sessió o mecanisme equivalent<a class="headerlink" href="#4-estat-sessio-o-mecanisme-equivalent" title="Permanent link">&para;</a></h3>
+<p>Has de demostrar que el sistema pot mantindre informació entre interaccions quan siga necessari.</p>
+<p>Això pot implicar, segons l’stack:</p>
+<ul>
+<li>sessió</li>
+<li>cookies</li>
+<li>un altre mecanisme equivalent</li>
+</ul>
+<p>El més important és que pugues explicar:</p>
+<ul>
+<li>què es guarda</li>
+<li>per què es guarda</li>
+<li>quan es recupera</li>
+<li>quan es deixa de considerar vàlid</li>
+</ul>
+<h3 id="5-autenticacio-i-funcionalitat-protegida">5. Autenticació i funcionalitat protegida<a class="headerlink" href="#5-autenticacio-i-funcionalitat-protegida" title="Permanent link">&para;</a></h3>
+<p>Has d’implementar una primera funcionalitat del projecte que només puga executar-se si es complixen unes condicions.</p>
+<p>Ha d’existir:</p>
+<ul>
+<li>identificació o autenticació funcional</li>
+<li>comprovació d’accés</li>
+<li>una acció real del domini protegida</li>
+<li>almenys un cas autoritzat</li>
+<li>almenys un cas denegat</li>
+</ul>
+<h3 id="6-tancament-prova-i-revisio">6. Tancament, prova i revisió<a class="headerlink" href="#6-tancament-prova-i-revisio" title="Permanent link">&para;</a></h3>
+<p>Has de deixar el repte preparat per a revisió.</p>
+<p>Això implica:</p>
+<ul>
+<li>prova del cas correcte</li>
+<li>prova d’un cas d’error</li>
+<li>documentació mínima del flux</li>
+<li>preparació per a checkpoint o defensa</li>
+</ul>
+<h2 id="evidencies-obligatories">Evidències obligatòries<a class="headerlink" href="#evidencies-obligatories" title="Permanent link">&para;</a></h2>
+<p>Per considerar complet el repte, hauràs d’aportar com a mínim:</p>
+<ul>
+<li>repositori actualitzat</li>
+<li>commits amb sentit</li>
+<li>issue principal del repte o registre equivalent</li>
+<li>formulari o entrada funcional</li>
+<li>tractament real de dades en servidor</li>
+<li>evidència d’ús de lògica bàsica</li>
+<li>evidència de manteniment d’estat</li>
+<li>autenticació funcional o equivalent</li>
+<li>una operació protegida del projecte</li>
+<li>un cas positiu i un cas negatiu</li>
+<li>prova o verificació bàsica del flux</li>
+<li>documentació mínima del repte</li>
+</ul>
+<h2 id="que-senten-per-funcionalitat-protegida">Què s’entén per funcionalitat protegida<a class="headerlink" href="#que-senten-per-funcionalitat-protegida" title="Permanent link">&para;</a></h2>
+<p>No és suficient tindre un formulari de login aïllat.</p>
+<p>Hi ha d’haver una acció real del producte que només es puga fer en determinades condicions.</p>
+<p>Per exemple:</p>
+<ul>
+<li>crear un recurs</li>
+<li>modificar una informació</li>
+<li>accedir a una part restringida</li>
+<li>executar una operació només per a un tipus concret d’usuari</li>
+<li>impedir una acció si no es complix una regla del sistema</li>
+</ul>
+<h2 id="que-es-comprovara">Què es comprovarà<a class="headerlink" href="#que-es-comprovara" title="Permanent link">&para;</a></h2>
+<p>Es comprovarà si:</p>
+<ul>
+<li>el sistema rep i tracta realment dades</li>
+<li>hi ha lògica de servidor amb sentit</li>
+<li>diferencies bé entre tractament de dades, estat i autenticació</li>
+<li>la funcionalitat protegida és real</li>
+<li>els errors no queden amagats</li>
+<li>pots demostrar un cas correcte i un cas incorrecte</li>
+<li>pots explicar el flux complet</li>
+</ul>
+<h2 id="checkpoint-del-repte">Checkpoint del repte<a class="headerlink" href="#checkpoint-del-repte" title="Permanent link">&para;</a></h2>
+<p>En el checkpoint hauràs de poder mostrar:</p>
+<ul>
+<li>com entra la informació al sistema</li>
+<li>què fa el servidor amb eixa informació</li>
+<li>quina lògica s’està aplicant</li>
+<li>què es guarda com a estat, si és el cas</li>
+<li>com es comprova l’accés</li>
+<li>quina funcionalitat queda protegida</li>
+<li>què passa quan el cas és incorrecte</li>
+</ul>
+<h2 id="defensa-tecnica-breu">Defensa tècnica breu<a class="headerlink" href="#defensa-tecnica-breu" title="Permanent link">&para;</a></h2>
+<p>En la defensa o revisió hauràs de poder respondre preguntes com:</p>
+<ul>
+<li>quina diferència hi ha entre estat i autenticació?</li>
+<li>en quin punt es decidix si una acció està permesa o no?</li>
+<li>què passa quan les dades són incorrectes?</li>
+<li>què guarda el sistema i amb quina finalitat?</li>
+<li>quina part del flux és pública i quina és protegida?</li>
+</ul>
+<h2 id="us-de-la-ia-en-este-repte">Ús de la IA en este repte<a class="headerlink" href="#us-de-la-ia-en-este-repte" title="Permanent link">&para;</a></h2>
+<p>La IA et pot ajudar, per exemple, a:</p>
+<ul>
+<li>proposar estructures de formulari</li>
+<li>suggerir validacions</li>
+<li>revisar errors</li>
+<li>generar esquelets inicials de flux</li>
+<li>proposar casos de prova</li>
+<li>ajudar a documentar el comportament</li>
+</ul>
+<p>Però has de poder:</p>
+<ul>
+<li>explicar el codi</li>
+<li>validar el que fa</li>
+<li>demostrar que funciona</li>
+<li>corregir-lo si falla</li>
+<li>justificar per què la funcionalitat protegida està construïda així</li>
+</ul>
+<h2 id="riscos-habituals">Riscos habituals<a class="headerlink" href="#riscos-habituals" title="Permanent link">&para;</a></h2>
+<p>Convindria evitar estos errors:</p>
+<ul>
+<li>fer només el cas feliç</li>
+<li>confondre estat amb autenticació</li>
+<li>tindre login però no cap funcionalitat real protegida</li>
+<li>mostrar dades sense tractar-les de veritat</li>
+<li>afegir lògica artificial només per cobrir apartats</li>
+<li>portar una solució que no pots explicar</li>
+</ul>
+<h2 id="recomanacions-de-treball">Recomanacions de treball<a class="headerlink" href="#recomanacions-de-treball" title="Permanent link">&para;</a></h2>
+<p>Per anar bé en este repte, convé:</p>
+<ul>
+<li>decidir prompte quina serà la funcionalitat protegida</li>
+<li>provar el flux complet des del principi</li>
+<li>registrar errors i correccions</li>
+<li>revisar bé el cas negatiu, no només el positiu</li>
+<li>preparar la demo del repte amb el recorregut complet</li>
+<li>arribar al checkpoint sabent explicar què passa en cada pas</li>
+</ul>
+<h2 id="quan-es-considera-superat">Quan es considera superat<a class="headerlink" href="#quan-es-considera-superat" title="Permanent link">&para;</a></h2>
+<p>Este repte es considera superat quan:</p>
+<ul>
+<li>el sistema rep i tracta dades en servidor</li>
+<li>hi ha lògica bàsica aplicada amb sentit</li>
+<li>existix una evidència clara de manteniment d’estat</li>
+<li>l’autenticació o control d’accés és funcional</li>
+<li>hi ha una operació real del projecte protegida</li>
+<li>es poden demostrar un cas positiu i un cas negatiu</li>
+<li>el treball està prou documentat i traçat</li>
+<li>pots defendre tècnicament el flux complet</li>
+</ul>
+<h2 id="que-prepara-este-repte">Què prepara este repte<a class="headerlink" href="#que-prepara-este-repte" title="Permanent link">&para;</a></h2>
+<p>Este repte deixa el producte preparat per al següent pas del curs:</p>
+<ul>
+<li>millorar l’arquitectura</li>
+<li>separar responsabilitats</li>
+<li>consolidar persistència</li>
+<li>i professionalitzar una funcionalitat que ja funciona, però encara ha de ser més mantingable</li>
+</ul>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2026-2027 Ignasi Gomis  - Licencia CC BY-NC-SA
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:<i.gomismullor@edu.gva.es>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 12.13c-.15.01-.29.06-.39.17l-1 1 2.05 2 1-1c.22-.21.22-.56 0-.77l-1.24-1.23a.56.56 0 0 0-.38-.17m-2 1.75L13 19.94V22h2.06l6.06-6.07M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7v-.89l8.24-8.22c.47-.49 1.12-.76 1.8-.76.34 0 .68.06 1 .19V6c0-1.12-.92-2-2.04-2m0 4-8 5-8-5V6l8 5 8-5"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["header.autohide", "toc.integrate", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiat al porta-retalls", "clipboard.copy": "C\u00f2pia al porta-retalls", "search.result.more.one": "1 m\u00e9s en aquesta p\u00e0gina", "search.result.more.other": "# m\u00e9s en aquesta p\u00e0gina", "search.result.none": "Cap document coincideix", "search.result.one": "1 document coincident", "search.result.other": "# documents coincidents", "search.result.placeholder": "Escriu per a comen\u00e7ar a cercar", "search.result.term.missing": "Desaparegut", "select.version": "Selecciona la versi\u00f3"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
