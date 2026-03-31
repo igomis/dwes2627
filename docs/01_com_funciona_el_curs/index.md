@@ -1,67 +1,165 @@
 # Com funciona el curs
 
-Este curs es treballa per reptes, però el que construïxes és un únic producte backend que va creixent. No es tracta de començar de zero en cada tema, sinó de millorar el mateix projecte amb objectius cada vegada més exigents.
+## Idea general
 
-## Idea clau
+Este mòdul funciona a partir d’un **projecte evolutiu basat en reptes**.
 
-El projecte ha d'avançar amb continuïtat. Si en un repte deixes només infraestructura o un esquelet buit, el problema no es queda en eixe repte: l'arrossegues al següent.
+Això vol dir que no anirem resolent exercicis independents sense connexió entre si. En lloc d’això, construirem un producte que anirà creixent i millorant durant el curs.
 
-## Seqüència general del curs
+Cada repte afegirà una capa nova de valor al projecte.
 
-La progressió del curs és esta:
+## Què vol dir treballar per reptes
 
-- `R1`: posar en marxa el producte i deixar una primera entrada funcional
-- `R2`: afegir autenticació i una primera regla de negoci
-- `R3`: ordenar l'arquitectura i treballar la persistència
-- `R4`: publicar i consumir una API útil
-- `R5`: tancar el producte i preparar la defensa final
+Cada repte et planteja una situació de treball amb sentit tècnic i professional.
 
-## Com has de treballar cada repte
+En cada repte hauràs de:
 
-En cada repte convé repetir la mateixa manera de treballar:
+- construir alguna cosa real
+- prendre decisions tècniques
+- provar el que has fet
+- documentar-ho
+- deixar evidències del procés
+- defendre el resultat
 
-1. concretar quin flux funcional vas a resoldre
-2. implementar-lo sobre el mateix repositori
-3. actualitzar el `README` i la documentació mínima necessària
-4. comprovar el cas correcte i algun cas d'error
-5. preparar una demo curta del que ja funciona
+Els reptes no són peces inconnexes. El que construïsques en un repte es reutilitzarà, es millorarà o es transformarà en els següents.
 
-## Què has d'entregar en cada repte
+## Com progressa el projecte
 
-Cada repte ha de deixar una peça que es puga revisar de manera autònoma. Com a mínim, s'espera:
+La progressió general del curs és esta:
 
-- repositori en marxa
-- funcionalitat real i provable
-- `README` actualitzat
-- historial de commits recognoscible
-- evidència de comprovació del flux principal
-- registre d'ús de la IA, si l'has usada de manera rellevant
+- primer, posar en marxa una base tècnica funcional
+- després, processar dades, gestionar estat i protegir funcionalitats
+- després, millorar arquitectura i persistència
+- després, exposar serveis i APIs
+- després, integrar serveis o dades externes
+- finalment, tancar, revisar, estabilitzar i defendre el producte
 
-## Com es comprovarà
+## Què s’espera de tu
 
-El teu treball no es donarà per bo només perquè "parega acabat". Es comprovarà de manera pràctica:
+En este curs no es valora només el resultat final.
 
-- executant el projecte
-- seguint els passos descrits al `README`
-- provant què passa quan l'usuari fa bé el flux i quan s'equivoca
-- revisant si la informació queda guardada, registrada o transformada com toca
-- preguntant-te per què has triat eixa solució i què has verificat
+També es valora si eres capaç de:
 
-## Què no convé fer
+- entendre el codi i el comportament del sistema
+- justificar per què has triat una solució
+- detectar errors i corregir-los
+- provar que allò funciona realment
+- documentar el treball amb claredat
+- mantindre el producte quan va creixent
 
-Evita estes situacions, perquè solen bloquejar el curs molt prompte:
+## Quines evidències hauràs d’aportar
 
-- canviar de projecte o de plantejament a cada repte
-- deixar el repositori sense instruccions clares
-- confiar en codi que no has provat realment
-- presentar només el cas feliç i amagar els errors
-- usar IA sense poder explicar què has acceptat i què has modificat
+Segons el repte, hauràs d’aportar evidències com ara:
 
-## Si et bloqueges
+- repositori actualitzat
+- commits amb sentit
+- issues o registre de tasques
+- codi funcional
+- proves o verificacions
+- documentació tècnica
+- captures o demos
+- defenses tècniques breus
+- registre d’ús d’IA quan corresponga
 
-Quan et quedes encallat, fes això abans d'obrir nous fronts:
+## Com s’usa la IA en este curs
 
-- reduïx el problema a un únic flux útil
-- prioritza que es puga arrancar i provar
-- arregla primer el `README`, la validació i la prova del cas principal
-- demana ajuda portant el bloqueig acotat i amb context
+La IA es pot utilitzar com a ferramenta habitual de treball.
+
+Per exemple, pot ajudar-te a:
+
+- explorar alternatives
+- generar esquelets inicials
+- revisar codi
+- detectar errors
+- proposar proves
+- millorar documentació
+
+Però hi ha una condició clara: has de **validar, comprendre i defendre** el que presentes.
+
+## Tres maneres de treballar que hem de saber diferenciar
+
+### Treball autònom real
+
+Has construït o adaptat la solució amb criteri propi i pots explicar-la, corregir-la i ampliar-la.
+
+### Treball assistit per IA
+
+Has utilitzat suport d’IA, però has revisat el resultat, has pres decisions i pots justificar tècnicament el que presentes.
+
+### Treball excessivament delegat en IA
+
+No pots explicar bé el que fa la solució, no saps corregir-la i no pots transferir-la a una situació nova.
+
+En este curs ens interessa sobretot el treball autònom i el treball assistit **amb validació real**.
+
+## Com es comprovarà l’aprenentatge real
+
+Per comprovar que entens el que presentes, es podran utilitzar mecanismes com:
+
+- revisió del repositori
+- revisió de commits i issues
+- proves funcionals
+- preguntes tècniques
+- checkpoints
+- defenses breus
+- comparació entre versions
+- canvis menuts en directe
+
+## Què és un checkpoint
+
+Un checkpoint és un moment de revisió durant el repte.
+
+No és només “ensenyar que has avançat”, sinó demostrar:
+
+- què tens fet
+- què funciona
+- què no funciona encara
+- quines decisions has pres
+- quins problemes has trobat
+- què penses fer després
+
+## Què és una defensa tècnica
+
+És una explicació breu i clara del treball que has fet.
+
+En una defensa tècnica hauràs de poder:
+
+- mostrar el producte
+- explicar el flux principal
+- justificar decisions
+- parlar d’errors i correccions
+- explicar l’ús de la IA
+- contestar preguntes del professorat
+
+## Què no hauria de passar
+
+Convindria evitar estes situacions:
+
+- presentar codi que no entens
+- copiar solucions sense adaptar-les
+- confiar només en el cas feliç
+- documentar coses que no s’han provat
+- improvisar la defensa sense revisar el treball real
+
+## Com aprofitar millor el repositori
+
+L’orde recomanat és este:
+
+- començar per la [visió general dels reptes](../02_reptes/index.md)
+- revisar [com s’avalua](../03_com_s_avalua/index.md)
+- consultar el [projecte base](../05_projecte_base/index.md)
+- usar els [materials](../04_materials/index.md) quan els necessites
+- tornar als [recursos ràpids](../06_recursos_rapid/index.md) quan tingues dubtes concrets
+
+## Idea final
+
+L’objectiu no és només arribar a un producte que funcione.
+
+L’objectiu és arribar a un producte que pugues:
+
+- construir
+- entendre
+- provar
+- mantindre
+- explicar
+- i defendre

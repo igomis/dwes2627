@@ -1,61 +1,204 @@
-# Repte 01
+# Repte 1. Kickoff funcional del backend
 
-## Objectiu del repte
+## Finalitat del repte
 
-En este primer repte has de deixar el projecte arrancat amb una primera funcionalitat real. L'objectiu no és tindre només l'entorn preparat, sinó demostrar que el backend ja resol una interacció útil del teu producte.
+En este primer repte has de posar en marxa la base tècnica del projecte i demostrar que el sistema ja és capaç de fer alguna cosa real, encara que siga una primera funcionalitat mínima.
 
-## Què has de fer
+L’objectiu no és només triar tecnologia o crear un esquelet buit. L’objectiu és deixar una base executable, documentada i amb un primer flux funcional verificable.
 
-Per donar el repte per encaminat, has de completar estes peces:
+## Què has de construir
 
-- confirmar el producte i l'stack amb què treballaràs
-- deixar el repositori en marxa i amb estructura recognoscible
-- crear un primer punt d'entrada al producte
-- implementar un formulari, petició o flux simple amb sentit dins del domini
-- validar al servidor almenys els camps o condicions bàsiques
-- registrar o persistir la informació principal del flux
-- deixar un `README` que permeta arrancar i provar el projecte
+Has de preparar una primera versió funcional del projecte que incloga, com a mínim:
 
-## Què has d'entregar
+- un repositori ordenat i executable
+- una decisió tècnica inicial justificada
+- un punt d’entrada al producte
+- un formulari o interacció equivalent útil
+- una validació mínima en servidor
+- un registre o persistència bàsica de la informació
+- un README que permeta arrancar el projecte
+- una traçabilitat mínima del treball
 
-Quan entregues `R1`, el repositori ha de contindre com a mínim:
+## Què es vol aconseguir amb este repte
 
-- codi executable
-- `README` amb passos d'instal·lació, arrancada i prova
-- una nota breu de la decisió tècnica inicial dins del `README` o en un fitxer equivalent
-- el primer flux funcional amb un exemple correcte i un exemple incorrecte
-- evidència que la dada es guarda, es registra o deixa resultat verificable
-- commits que mostren el procés de construcció
+Amb este repte has de demostrar que saps:
 
-Si has usat IA per preparar estructura, proves o codi, has de deixar també un registre breu del que li vas demanar, què vas aprofitar i com ho vas comprovar.
+- posar en marxa un entorn de treball real
+- prendre una primera decisió tècnica amb criteri
+- connectar una entrada d’usuari amb el backend
+- validar informació en servidor
+- deixar rastre del treball fet
+- explicar què has construït i per què
 
-## Com es comprovarà
+## Estructura del repte
 
-La revisió de `R1` es farà de manera pràctica:
+Este repte es pot treballar en quatre parts.
 
-- arrancant el projecte seguint el `README`
-- mostrant el punt d'entrada del producte
-- executant un cas correcte
-- executant un cas incorrecte
-- revisant on queda la informació o quin resultat genera el sistema
-- fent-te preguntes curtes sobre la decisió tècnica i la validació
+### 1. Decisió tècnica inicial
 
-## Quan el repte no està prou bé
+Has de comparar opcions i justificar quina base tècnica utilitzaràs per al projecte.
 
-Encara que hi haja treball fet, `R1` es quedarà curt si passa alguna d'estes coses:
+No cal fer una comparativa enorme, però sí suficient per explicar:
 
-- només hi ha l'esquelet del framework
-- el flux no té utilitat real dins del producte
-- la validació està absent o només existeix en la interfície
-- no es pot demostrar què passa amb la dada
-- el `README` no permet reproduir la prova
+- quina opció tries
+- per què la tries
+- quines alternatives has descartat
+- per què és adequada per al projecte
 
-## Abans de tancar `R1`
+### 2. Entorn executable i estructura base
 
-Revisa esta llista final:
+Has de deixar el projecte preparat perquè es puga arrancar de manera clara i reproduïble.
 
-- el projecte arranca en local sense passos ocults
-- el flux principal es pot provar de principi a fi
-- hi ha almenys un error controlat i visible
-- el `README` està escrit per a una altra persona, no només per a tu
-- pots explicar per què este flux és la millor arrancada per al teu producte
+Això inclou:
+
+- estructura mínima del repositori
+- fitxers necessaris per començar
+- primeres decisions d’organització
+- README amb instruccions d’arrancada
+
+### 3. Primer flux funcional
+
+Has de construir una primera interacció real amb el sistema.
+
+Per exemple:
+
+- una landing o equivalent
+- un formulari útil
+- tractament de la petició
+- validació mínima
+- resposta clara
+- registre o persistència bàsica
+
+### 4. Tancament tècnic del repte
+
+Has de deixar el treball preparat per a revisió.
+
+Això inclou:
+
+- README revisat
+- evidència de prova del flux
+- decisions bàsiques documentades
+- preparació per a checkpoint o defensa
+
+## Evidències obligatòries
+
+Per considerar complet el repte, hauràs d’aportar com a mínim:
+
+- repositori actualitzat
+- README executable
+- issue principal del repte o registre equivalent de tasques
+- commits amb sentit
+- comparativa o decisió tècnica inicial
+- primer flux funcional operatiu
+- evidència de validació mínima
+- evidència de registre o persistència bàsica
+- demo o mostra funcional del repte
+
+## Què s’entén per “primer flux funcional”
+
+No n’hi ha prou amb una pàgina bonica o amb una estructura de projecte que “sembla” correcta.
+
+En este repte hi ha d’haver una seqüència real, encara que siga simple:
+
+- l’usuari envia una informació
+- el sistema la rep
+- el sistema la valida mínimament
+- el sistema respon
+- i queda algun tipus de rastre o registre de la dada
+
+## Què es comprovarà
+
+Es comprovarà si:
+
+- el projecte arranca de veritat
+- el README permet posar-lo en marxa
+- el flux funcional està connectat de punta a punta
+- la validació no és només aparent
+- hi ha una primera decisió tècnica justificable
+- el treball està traçat amb evidències reals
+- pots explicar el que has fet
+
+## Checkpoint del repte
+
+En el checkpoint hauràs de poder mostrar:
+
+- que el projecte arranca
+- quina tecnologia o enfocament has triat
+- quin és el primer flux funcional
+- què valida el sistema
+- què queda registrat o persistit
+- quins problemes has tingut fins ara
+
+## Defensa tècnica breu
+
+En la defensa o revisió hauràs de poder respondre preguntes com:
+
+- per què has triat esta opció tècnica?
+- què passaria si canviara el context del projecte?
+- què fa exactament el backend quan rep la petició?
+- on es valida la informació?
+- què està realment implementat i què encara no?
+
+## Ús de la IA en este repte
+
+La IA et pot ajudar, per exemple, a:
+
+- comparar opcions
+- generar esquelets inicials
+- detectar errors de configuració
+- revisar el README
+- suggerir validacions
+
+Però no és suficient copiar el que et done.
+
+Has de poder:
+
+- explicar la solució
+- adaptar-la
+- verificar-la
+- corregir errors
+- justificar per què l’has adoptada
+
+## Riscos habituals
+
+Convindria evitar estos errors:
+
+- muntar només un esquelet sense funcionalitat real
+- portar una comparativa superficial
+- fer un formulari sense tractament real en servidor
+- validar només de manera aparent
+- tindre un README que no servix per arrancar el projecte
+- presentar codi que no pots explicar
+
+## Recomanacions de treball
+
+Per anar bé en este repte, convé:
+
+- decidir prompte una base tècnica
+- muntar el projecte al més prompte possible
+- provar des del principi el flux funcional
+- documentar problemes i decisions
+- no deixar README i evidències per al final
+- arribar al checkpoint amb una demo real preparada
+
+## Quan es considera superat
+
+Este repte es considera superat quan:
+
+- el projecte es pot arrancar
+- existix una primera funcionalitat real
+- hi ha una entrada d’usuari tractada pel backend
+- hi ha validació mínima en servidor
+- existix algun registre o persistència bàsica
+- el treball està documentat i traçat
+- pots defendre tècnicament el que has fet
+
+## Què prepara este repte
+
+Este repte deixa la base preparada per al següent pas del curs:
+
+- tractar millor les dades
+- incorporar lògica de processament
+- gestionar estat
+- protegir funcionalitats
+- i fer que el producte comence a comportar-se com un sistema real

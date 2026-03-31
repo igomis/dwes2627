@@ -1,50 +1,67 @@
-# Inici
+# DWES 26/27
 
-Este repositori és la base de treball del curs. Ací tens, en format curt i directe, el que has de fer en cada fase, què has d'entregar i com es comprovarà el teu treball.
+Benvingut o benvinguda al repositori del mòdul de **Desenvolupament Web en Entorn Servidor**.
+
+En este curs treballarem a partir d’un **projecte evolutiu**. Això vol dir que no anirem fent pràctiques aïllades, sinó que construirem i millorarem un mateix producte al llarg del curs.
+
+## Què trobaràs ací
+
+- una visió clara de com funciona el curs
+- els reptes que anirem resolent
+- com s’avaluarà el treball
+- materials de suport
+- informació sobre el projecte base
+- recursos ràpids per al dia a dia
+
+## Com està organitzat el curs
+
+El recorregut del mòdul està estructurat en fases:
+
+- un inici de base tècnica i primer flux funcional
+- una fase de processament, estat i autenticació
+- una fase de millora d’arquitectura i persistència
+- una fase d’API i serveis
+- una fase d’integració amb serveis externs
+- una fase final de tancament, verificació i defensa tècnica
 
 ## Per on començar
 
-Si entres per primera vegada, seguix este ordre:
+Si és la primera vegada que entres, l’orde recomanat és este:
 
-1. llig [Com funciona el curs](01_com_funciona_el_curs/index.md)
-2. revisa [Repte 01](02_reptes/repte_01.md)
-3. mira [Com s'avalua](03_com_s_avalua/index.md)
-4. prepara el teu repositori perquè es puga arrancar i provar
+- llegir [Com funciona el curs](01_com_funciona_el_curs/index.md)
+- revisar la [visió general dels reptes](02_reptes/index.md)
+- consultar [Com s’avalua](03_com_s_avalua/index.md)
 
-## Què faràs durant el curs
+## Idea clau del mòdul
 
-Al llarg del curs no faràs pràctiques inconnexes. Construiràs un únic producte backend que creixerà repte a repte.
+No n’hi ha prou amb “fer que funcione”.
 
-En la pràctica, això vol dir:
+En este curs també serà important:
 
-- treballar sempre sobre el mateix repositori
-- afegir funcionalitat real en cada repte
-- deixar documentació i proves mínimes al dia
-- poder explicar cada decisió important
+- entendre el que fas
+- provar-ho
+- documentar-ho
+- justificar decisions
+- corregir errors
+- defendre tècnicament el teu treball
 
-## Què has d'entregar sempre
+## Ús de la IA
 
-En tots els reptes hauràs de deixar, com a mínim:
+La IA forma part del context real de treball, així que la podràs utilitzar. Però utilitzar IA no significa delegar-ho tot.
 
-- codi actualitzat en el repositori
-- `README` amb passos clars per arrancar i provar el projecte
-- un flux funcional que es puga demostrar
-- commits recognoscibles del procés de treball
-- registre d'ús de la IA si l'has usada en parts rellevants
+El que compta és que pugues:
 
-## Com es comprovarà
+- explicar el que has fet
+- validar el resultat
+- corregir errors
+- justificar decisions
+- demostrar autoria i comprensió real
 
-El professorat comprovarà el treball sobre el teu repositori i sobre el producte en marxa. Normalment es revisarà així:
-
-- arrancant el projecte seguint el `README`
-- provant un cas correcte i un cas incorrecte
-- revisant què fa el sistema amb la informació introduïda
-- fent preguntes curtes sobre les decisions i les comprovacions que has fet
-
-## Documents que ja tens disponibles
+## Navegació ràpida
 
 - [Com funciona el curs](01_com_funciona_el_curs/index.md)
-- [Repte 01](02_reptes/repte_01.md)
-- [Com s'avalua](03_com_s_avalua/index.md)
-
-La resta de seccions s'aniran completant a mesura que avance el curs.
+- [Reptes](02_reptes/index.md)
+- [Com s’avalua](03_com_s_avalua/index.md)
+- [Materials](04_materials/index.md)
+- [Projecte base](05_projecte_base/index.md)
+- [Recursos ràpids](06_recursos_rapid/index.md)

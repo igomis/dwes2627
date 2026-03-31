@@ -1,69 +1,171 @@
-# Com s'avalua
+# Com s’avalua
 
-L'avaluació no es basa només en tindre codi escrit. El que compta és si el que entregues funciona, es pot comprovar i ho pots explicar amb solvència.
+En este mòdul no s’avalua només si el producte final “funciona”.
 
-## Què compta de veritat
+També s’avalua si eres capaç de:
 
-El pes principal de la valoració està ací:
+- entendre el que has fet
+- justificar decisions tècniques
+- provar el sistema
+- detectar i corregir errors
+- documentar el treball
+- mantindre el producte quan creix
+- defendre el resultat amb criteri
 
-- funcionalitat real del producte
-- comprovacions i proves del que has implementat
-- qualitat del repositori i del `README`
-- traçabilitat del procés amb commits
-- capacitat d'explicar decisions i resultats
-- ús verificable de la IA, si l'has usada
+## Què es tindrà en compte
 
-## Què has d'entregar perquè es puga avaluar bé
+L’avaluació es basarà en un conjunt d’evidències.
 
-Perquè el professorat puga revisar-te amb criteri, han d'existir estes evidències:
+Segons el repte, es podran valorar elements com:
 
 - repositori actualitzat
-- historial de treball recognoscible
-- `README` operatiu
-- fluxos principals demostrables
-- casos d'error mínims comprovats
-- documentació tècnica bàsica quan faça falta
-- registre d'ús de la IA en les parts on haja intervingut
+- commits i historial de treball
+- issues o tasques registrades
+- funcionalitats executables
+- proves o verificacions
+- documentació tècnica
+- checkpoints
+- defenses tècniques
+- registre d’ús d’IA quan corresponga
 
-## Com es comprovarà
+## Idea clau
 
-La revisió no serà només visual. Normalment es farà així:
+No n’hi ha prou amb entregar una solució.
 
-- executant el teu projecte
-- seguint els passos del `README`
-- provant si el flux principal funciona
-- revisant si els errors importants estan controlats
-- preguntant-te per les decisions que has pres
-- demanant-te que expliques o toques el teu propi codi
+Cal poder demostrar:
 
-## L'avaluació és individual
-
-Encara que hi haja moments de treball compartit, referències comunes o productes semblants, la valoració final és individual. Has de poder defensar per tu mateix:
-
-- què has fet exactament
-- per què ho has resolt així
+- què fa
+- com ho fa
+- per què està fet així
 - què has comprovat
-- què canviaries si haguéres de millorar-ho
+- quins problemes has trobat
+- com els has resolt
 
-## Si uses IA
+## Què és una evidència
 
-La IA es pot usar com a ajuda de treball, però no substituïx la teua autoria. Si l'uses, has de poder deixar clar:
+Una evidència és una prova real del treball que has fet i del que saps fer.
 
-- quin problema volies resoldre
-- què et va proposar
-- què vas acceptar o rebutjar
-- quins canvis vas fer tu
-- com vas verificar després el resultat
+Per exemple:
 
-Si no ho pots explicar, modificar i provar, encara no està llest per entregar.
+- codi funcional
+- una prova executada
+- una decisió documentada
+- una incidència corregida
+- una demo
+- una defensa oral
+- una explicació tècnica solvent
 
-## Què et farà baixar molt la valoració
+## Tipus d’evidències habituals
 
-Hi ha errors que penalitzen molt encara que el projecte "parega avançat":
+### Evidències de producte
 
-- entregar un esquelet sense funcionalitat real
-- no poder arrancar el projecte davant del professorat
-- no tindre proves ni comprovacions mínimes
-- portar un `README` desactualitzat o inútil
-- no poder justificar una decisió important
-- ocultar o no saber defensar l'ús de la IA
+Mostren què has construït.
+
+Per exemple:
+
+- backend funcional
+- endpoint operatiu
+- integració externa real
+- automatització útil
+
+### Evidències de procés
+
+Mostren com has treballat.
+
+Per exemple:
+
+- commits
+- issues
+- registre d’errors
+- comparació entre versions
+- AI log
+
+### Evidències de comprensió
+
+Mostren que entens el que presentes.
+
+Per exemple:
+
+- defensa tècnica
+- preguntes del professorat
+- canvi menut en directe
+- explicació d’una decisió o d’un error
+
+## Checkpoints
+
+Durant el curs hi haurà moments de revisió parcial.
+
+En un checkpoint no basta amb “ensenyar alguna cosa”. Cal poder explicar:
+
+- què tens fet
+- què funciona
+- què no està resolt encara
+- quines decisions has pres
+- quins problemes tens
+- quin serà el pas següent
+
+## Defenses tècniques
+
+En alguns moments hauràs de fer una defensa breu del teu treball.
+
+Això implica:
+
+- mostrar el sistema
+- explicar el flux principal
+- justificar decisions
+- parlar d’errors i correccions
+- explicar l’ús de la IA
+- respondre preguntes
+
+## Ús de la IA i avaluació
+
+La IA es pot utilitzar, però no substituïx la teua responsabilitat tècnica.
+
+El que es valorarà és si pots:
+
+- validar el resultat
+- detectar errors
+- adaptar la solució
+- justificar decisions
+- explicar què has fet realment tu i què has fet amb suport
+
+## Tres situacions diferents
+
+### Treball autònom real
+
+Pots explicar, adaptar, corregir i defendre el que has construït.
+
+### Treball assistit per IA
+
+Has rebut ajuda, però entens el resultat, l’has validat i pots justificar-lo.
+
+### Treball excessivament delegat
+
+No pots explicar bé la solució, no saps corregir-la i no pots transferir-la a una situació nova.
+
+## Com es comprovarà l’aprenentatge real
+
+Es podran utilitzar mecanismes com:
+
+- revisió del repositori
+- revisió de commits i issues
+- execució del producte
+- proves funcionals
+- preguntes tècniques
+- comparació entre versions
+- modificacions menudes en directe
+- defenses curtes
+
+## Què convé fer per anar bé
+
+- treballar de manera progressiva
+- no deixar les evidències per al final
+- provar allò que construeixes
+- documentar problemes i correccions
+- revisar el repositori abans de cada checkpoint
+- preparar la defensa amb el sistema obert i comprovat
+
+## Pàgines relacionades
+
+- [Evidències](evidencies.md)
+- [Checkpoints i defenses](checkpoints_i_defenses.md)
